@@ -1,10 +1,10 @@
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+
 
 export default function SignIn() {
-  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -93,7 +93,6 @@ export default function SignIn() {
             <div className="flex flex-col gap-1.5">
               <div className="flex items-center justify-between">
                 <label className="text-xs text-cyan-400/60 tracking-widest uppercase" htmlFor="password">Password</label>
-                <a href="#" className="text-xs text-cyan-400/50 hover:text-cyan-400 transition-colors">Forgot password?</a>
               </div>
               <input
                 id="password"

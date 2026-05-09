@@ -21,6 +21,9 @@ export default function SignUp() {
       window.location.href = "/profile";
     }
   })
+  // window=browser
+  // location=current URL/address
+  //href=change the address
 
 
   const handleChange = (e) => {
